@@ -1,0 +1,130 @@
+
+<style>
+  .section { margin-bottom: 28px; }
+  .section-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--color-border-tertiary); }
+  .section-title { font-size: 13px; font-weight: 500; color: var(--color-text-primary); letter-spacing: 0.04em; text-transform: uppercase; }
+  .badge { font-size: 10px; font-weight: 500; padding: 2px 8px; border-radius: 20px; }
+  .badge-must { background: #E6F1FB; color: #0C447C; }
+  .badge-nice { background: #EAF3DE; color: #3B6D11; }
+  .badge-wow  { background: #FAEEDA; color: #854F0B; }
+  @media (prefers-color-scheme: dark) {
+    .badge-must { background: #0C447C; color: #B5D4F4; }
+    .badge-nice { background: #27500A; color: #C0DD97; }
+    .badge-wow  { background: #633806; color: #FAC775; }
+  }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .card { background: var(--color-background-secondary); border: 1px solid var(--color-border-tertiary); border-radius: 10px; padding: 12px 14px; cursor: pointer; transition: border-color 0.15s; }
+  .card:hover { border-color: var(--color-border-primary); }
+  .card-title { font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 3px; }
+  .card-desc { font-size: 12px; color: var(--color-text-secondary); line-height: 1.5; }
+  .dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; margin-top: 1px; }
+  .dot-must { background: #378ADD; }
+  .dot-nice { background: #639922; }
+  .dot-wow  { background: #BA7517; }
+</style>
+
+<div style="padding: 4px 0 8px;">
+
+  <div class="section">
+    <div class="section-header">
+      <div class="dot dot-must"></div>
+      <span class="section-title">Must have — core shopping</span>
+      <span class="badge badge-must">Ship first</span>
+    </div>
+    <div class="grid">
+      <div class="card" onclick="sendPrompt('How should I build the product listing page for my gadget store?')">
+        <div class="card-title">Product listing page</div>
+        <div class="card-desc">Grid of cards with image, name, price, tag, rating. Filter by category and sort by price/rating.</div>
+      </div>
+      <div class="card" onclick="sendPrompt('What should a product detail page include for a premium gadget store?')">
+        <div class="card-title">Product detail page</div>
+        <div class="card-desc">Image gallery, specs table, variant selector (color/storage), add to cart.</div>
+      </div>
+      <div class="card" onclick="sendPrompt('How do I build a shopping cart in Next.js without a backend?')">
+        <div class="card-title">Cart</div>
+        <div class="card-desc">Slide-out drawer or page. Quantity controls, remove item, subtotal. Persisted in localStorage.</div>
+      </div>
+      <div class="card" onclick="sendPrompt('How should the homepage hero section look for a premium gadget store?')">
+        <div class="card-title">Homepage / hero</div>
+        <div class="card-desc">Featured product spotlight, category shortcuts, "new arrivals" strip.</div>
+      </div>
+      <div class="card" onclick="sendPrompt('How do I implement search for a frontend-only Next.js eCommerce site?')">
+        <div class="card-title">Search</div>
+        <div class="card-desc">Real-time search over product names and brands. Filter results as you type.</div>
+      </div>
+      <div class="card" onclick="sendPrompt('How should I implement responsive navigation for a premium gadget store?')">
+        <div class="card-title">Navigation</div>
+        <div class="card-desc">Top nav with logo, category links, search icon, cart icon with item count badge.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="dot dot-nice"></div>
+      <span class="section-title">Should have — UX polish</span>
+      <span class="badge badge-nice">Ship second</span>
+    </div>
+    <div class="grid">
+      <div class="card" onclick="sendPrompt('How do I build a product comparison feature for a gadget store?')">
+        <div class="card-title">Compare products</div>
+        <div class="card-desc">Select up to 3 products. Side-by-side spec table using the specLabels from the data model.</div>
+      </div>
+      <div class="card" onclick="sendPrompt('How do I build a wishlist feature in Next.js using localStorage?')">
+        <div class="card-title">Wishlist</div>
+        <div class="card-desc">Save items to a wishlist. Heart icon on cards. Persisted in localStorage.</div>
+      </div>
+      <div class="card" onclick="sendPrompt('How should I build a category page for smartphones, laptops and audio?')">
+        <div class="card-title">Category pages</div>
+        <div class="card-desc">Dedicated /smartphones, /laptops, /audio pages with filtered product grid and category hero.</div>
+      </div>
+      <div class="card" onclick="sendPrompt('How do I add filter and sort to a product listing page in Next.js?')">
+        <div class="card-title">Filter + sort sidebar</div>
+        <div class="card-desc">Filter by brand, price range, rating. Sort by price (asc/desc), rating, newest.</div>
+      </div>
+      <div class="card" onclick="sendPrompt('How do I build a "recently viewed" section for a frontend-only eCommerce site?')">
+        <div class="card-title">Recently viewed</div>
+        <div class="card-desc">Track last 4–6 visited products in localStorage. Show strip on homepage and product pages.</div>
+      </div>
+      <div class="card" onclick="sendPrompt('How should I design a checkout page for a portfolio eCommerce project?')">
+        <div class="card-title">Checkout page (mock)</div>
+        <div class="card-desc">Multi-step form: shipping → payment → summary. Static success screen. No real payment needed.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="dot dot-wow"></div>
+      <span class="section-title">Wow factor — portfolio standout</span>
+      <span class="badge badge-wow">Ship third</span>
+    </div>
+    <div class="grid">
+      <div class="card" onclick="sendPrompt('How do I build a dark mode toggle in a Next.js app with TailwindCSS?')">
+        <div class="card-title">Dark mode</div>
+        <div class="card-desc">System default + manual toggle. Persisted preference. Clean light/dark theme switch.</div>
+      </div>
+      <div class="card" onclick="sendPrompt('How do I add smooth page transitions in Next.js for a premium feel?')">
+        <div class="card-title">Page transitions</div>
+        <div class="card-desc">Fade or slide between routes using Framer Motion. Makes the site feel premium instantly.</div>
+      </div>
+      <div class="card" onclick="sendPrompt('How do I add image zoom on hover for a product gallery in React?')">
+        <div class="card-title">Product image zoom</div>
+        <div class="card-desc">Hover to zoom on product images. Thumbnail strip. Smooth transitions.</div>
+      </div>
+      <div class="card" onclick="sendPrompt('How do I add skeleton loaders to a Next.js eCommerce app?')">
+        <div class="card-title">Skeleton loaders</div>
+        <div class="card-desc">Animated placeholders while product cards load. Looks polished, signals intent.</div>
+      </div>
+      <div class="card" onclick="sendPrompt('What analytics data should a portfolio eCommerce project track or simulate?')">
+        <div class="card-title">Analytics dashboard (mock)</div>
+        <div class="card-desc">Static charts: top products, sales by category, revenue trend. Shows fullstack thinking.</div>
+      </div>
+      <div class="card" onclick="sendPrompt('How do I make my Next.js eCommerce site fully mobile responsive with TailwindCSS?')">
+        <div class="card-title">Fully responsive UI</div>
+        <div class="card-desc">Mobile-first layout. Bottom nav on small screens. Touch-friendly product cards and sliders.</div>
+      </div>
+    </div>
+  </div>
+
+</div>
