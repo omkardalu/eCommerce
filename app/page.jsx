@@ -2,7 +2,6 @@ import ProductCard from "@/components/ProductCard";
 import products from "@/utils/products";
 
 export default function Home() {
-  products.map((product)=>{console.log(product.brand)})
 
   return (
     <div className="flex items-center w-screen flex-wrap justify-center">

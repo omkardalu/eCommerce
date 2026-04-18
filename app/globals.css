@@ -17,12 +17,12 @@ Surface: #1A1A1A
 Border: #333333 */
 
 :root {
---primary:  #0B0B0B; /* Black*/
---background: #FFFFFF; /* White */
---surface: #F5F5F5; /* Light Gray */
---borders:  #E5E5E5; /* Soft Gray*/
---textPrimary: #242424; 
---textSecondary: #666666; 
+--ink: #111111;            /* Rich Carbon */
+--snow: #FFFFFF;           /* Pure Snow */
+--cloud: #F5F5F7;          /* Cloud Surface */
+--platinum: #E8E8ED;       /* Premium Border */
+--graphite: #2C2C2E;       /* Deep Graphite */
+--slate: #6E6E73;          /* Premium Slate */
 }
 
 @theme inline {

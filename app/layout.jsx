@@ -10,10 +10,10 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`h-full antialiased`}>
       <body className="min-h-full flex flex-col] ">
         <div className="flex min-h-screen flex-col">
-          <header className="p-4 bg-(--primary) text-(--surface)">
+          <header className="p-4 bg-(--graphite) text-(--cloud)">
             <h1>eCommerece</h1>
           </header>
-          <main className="grow bg-(--surface)">
+          <main className="grow">
             {children}
           </main>
           <footer className="p-4 bg-(--surface)"><div>&copy; All Rights Reserved {new Date().getFullYear()}</div></footer>

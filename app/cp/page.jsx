@@ -1,13 +1,47 @@
 'use client'
 function Palette() {
-    const colors = [
-    { name: 'primary', value: '#0B0B0B', label: 'Black' },
-    { name: 'textPrimary', value: '#242424', label: '' },
-    { name: 'textSecondary', value: '#666666', label: '' },
-    { name: 'borders', value: '#E5E5E5', label: 'Soft Gray' },
-    { name: 'surface', value: '#F5F5F5', label: 'Light Gray' },
-    { name: 'background', value: '#FFFFFF', label: 'White' },
-  ];
+const colors = [
+  {
+    name: "ink",
+    value: "#111111",
+    label: "Rich Carbon",
+  },
+  {
+    name: "graphite",
+    value: "#2C2C2E",
+    label: "Deep Graphite",
+  },
+  {
+    name: "slate",
+    value: "#6E6E73",
+    label: "Premium Slate",
+  },
+  {
+    name: "mist",
+    value: "#D2D2D7",
+    label: "Soft Mist",
+  },
+  {
+    name: "cloud",
+    value: "#F5F5F7",
+    label: "Cloud Surface",
+  },
+  {
+    name: "snow",
+    value: "#FFFFFF",
+    label: "Pure Snow",
+  },
+  {
+    name: "platinum",
+    value: "#E8E8ED",
+    label: "Platinum Border",
+  },
+  {
+    name: "silver",
+    value: "#A1A1A6",
+    label: "Muted Silver",
+  },
+];
 
   const copyToClipboard = (name) => {
     navigator.clipboard.writeText(`(--${name})`);
