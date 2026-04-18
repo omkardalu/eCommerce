@@ -10,13 +10,13 @@ const ProductCard = ({ id, name, brand, price, tag, rating }) => {
           </div>
 
           <div className="flex flex-col p-2 px-4 justify-center">
-            <p className="font-bold max-h-[2lh] overflow-hidden  xl:text-2xl xl:pb-4 text-xl text-(--ink)">
+            <p className="font-bold max-h-[2lh] overflow-hidden  xl:text-xl xl:pb-4 text-lg text-(--ink)">
               {name}
             </p>
             <p className=" pb-2 text-(--slate) xl:text-xl xl:pb-4">{brand}</p>
-            <div className="flex justify-between pr-4">
+            <div className="flex justify-between sm:pr-4">
               <p className="text-(--silver) font-bold ">₹{price}</p>
-              <p className="text-(--graphite) border border-(--slate) rounded-2xl px-2">★{rating}</p>
+              <p className="text-(--graphite) border text-sm border-(--slate) rounded-2xl px-2 ">★{rating}</p>
             </div>
           </div>
         </div>

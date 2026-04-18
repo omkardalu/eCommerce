@@ -4,7 +4,7 @@ import products from "@/utils/products";
 export default function Home() {
 
   return (
-    <div className="flex items-center w-screen flex-wrap py-4 justify-center">
+    <div className="flex items-center max-w-dvw flex-wrap py-4 justify-center">
       {products.map((product)=>{
         return <ProductCard key={product.id}
           id={product.id}
