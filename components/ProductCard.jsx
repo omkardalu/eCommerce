@@ -2,11 +2,11 @@ import Card from "./Card";
 
 const ProductCard = ({ id, name, brand, price, tag, rating }) => {
   return (
-    <div className="md:w-1/4 lg:w-1/5 xl:w-1/6 mx-4 ">
+    <div className="md:w-1/4 md:mb-2 lg:w-1/5 xl:mb-4 xl:w-1/6 mx-4 ">
       <Card>
-        <div className="grid grid-cols-2 md:grid-cols-1 md:grid-rows-2">
-          <div className="overflow-hidden hover:shadow-inner flex items-center">
-              <img className="hover:scale-125" src="https://placehold.co/600x400" alt="" />
+        <div className="grid grid-cols-2 md:grid-cols-1 md:grid-rows-2 ">
+          <div className="overflow-hidden z-0 hover:shadow-inner flex items-center">
+              <img className="hover:scale-125 rounded-xl h-full w-auto" src="https://placehold.co/600x400" alt="" />
           </div>
 
           <div className="flex flex-col p-2 px-4 justify-center">
@@ -15,8 +15,8 @@ const ProductCard = ({ id, name, brand, price, tag, rating }) => {
             </p>
             <p className=" pb-2 text-(--slate) xl:text-xl xl:pb-4">{brand}</p>
             <div className="flex justify-between pr-4">
-              <p className="text-(--silver)">₹{price}</p>
-              <p className="text-(--graphite)">★{rating}</p>
+              <p className="text-(--silver) font-bold ">₹{price}</p>
+              <p className="text-(--graphite) border border-(--slate) rounded-2xl px-2">★{rating}</p>
             </div>
           </div>
         </div>
