@@ -1,25 +1,27 @@
 import Card from "./Card";
 
-const ProductCard = ({id,name,brand,price,tag ,rating}) => {
-
+const ProductCard = ({ id, name, brand, price, tag, rating }) => {
   return (
-    <Card>
-    <div className="grid grid-cols-2">
-      <div className="">
+    <div className="md:w-1/4 lg:w-1/5 xl:w-1/6 mx-4 ">
       <Card>
-        <img src="https://placehold.co/600x400" alt="" />
-      </Card>
-      </div>
-      <div className="flex flex-col p-2 px-4 justify-center">
-        <p className="font-bold max-h-[2lh] overflow-hidden text-xl text-(--ink)">{name}</p>
-        <p className="text-(--slate)">{brand}</p>
-        <div className="flex justify-between pr-4">
-        <p className="text-(--graphite)">₹{price}</p>
-        <p>★{rating}</p>
+        <div className="grid grid-cols-2 md:grid-cols-1 md:grid-rows-2">
+          <div className="overflow-hidden hover:shadow-inner flex items-center">
+              <img className="hover:scale-125" src="https://placehold.co/600x400" alt="" />
+          </div>
+
+          <div className="flex flex-col p-2 px-4 justify-center">
+            <p className="font-bold max-h-[2lh] overflow-hidden  xl:text-2xl xl:pb-4 text-xl text-(--ink)">
+              {name}
+            </p>
+            <p className=" pb-2 text-(--slate) xl:text-xl xl:pb-4">{brand}</p>
+            <div className="flex justify-between pr-4">
+              <p className="text-(--silver)">₹{price}</p>
+              <p className="text-(--graphite)">★{rating}</p>
+            </div>
+          </div>
         </div>
-      </div>
+      </Card>
     </div>
-    </Card>
   );
 };
 export default ProductCard;
@@ -54,18 +56,17 @@ export default ProductCard;
    },
 */
 
-
-     //   const a = <section className="bg-(--borders) max-w-3/4 sm:max-w-50  min-w-40 shadow-xl hover:shadow-2xl transition-shadow duration-150 text-(--textSecondary) border-4 border-background m-2 mx-6 rounded-xl">
-     //       <div className="flex sm:flex-col items-center ">
-     //         <div className="sm:h-40 h-full w-1/2 sm:w-auto overflow-hidden flex items-center justify-center bg-white"><img className="object-cover" src="/images/audio/Nothing-Ear-(2).png" alt={name} /></div>
-     //         <div className=" w-1/2 sm:w-auto p-4">
-     //           <p className="bg-white w-fit px-1 text-[10px] rounded-2xl">{tag}</p>
-     //           <p className="capitalize text-(--textPrimary) font-black text-2xl text-balance wrap-break-word overflow-hidden h-18 pt-2">{name}</p>
-     //           <p className="text-(--textSecondary) capitalize font-bold text-xl">{brand}</p>
-     //           <div className="flex justify-between">
-     //           <p>★ {rating}</p>
-     //           <p className="text-(--textPrimary)">₹{price}</p>
-     //           </div>
-     //         </div>
-     //       </div>
-     //     </section>
+//   const a = <section className="bg-(--borders) max-w-3/4 sm:max-w-50  min-w-40 shadow-xl hover:shadow-2xl transition-shadow duration-150 text-(--textSecondary) border-4 border-background m-2 mx-6 rounded-xl">
+//       <div className="flex sm:flex-col items-center ">
+//         <div className="sm:h-40 h-full w-1/2 sm:w-auto overflow-hidden flex items-center justify-center bg-white"><img className="object-cover" src="/images/audio/Nothing-Ear-(2).png" alt={name} /></div>
+//         <div className=" w-1/2 sm:w-auto p-4">
+//           <p className="bg-white w-fit px-1 text-[10px] rounded-2xl">{tag}</p>
+//           <p className="capitalize text-(--textPrimary) font-black text-2xl text-balance wrap-break-word overflow-hidden h-18 pt-2">{name}</p>
+//           <p className="text-(--textSecondary) capitalize font-bold text-xl">{brand}</p>
+//           <div className="flex justify-between">
+//           <p>★ {rating}</p>
+//           <p className="text-(--textPrimary)">₹{price}</p>
+//           </div>
+//         </div>
+//       </div>
+//     </section>

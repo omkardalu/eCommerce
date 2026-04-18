@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`h-full antialiased`}>
       <body className="min-h-full flex flex-col] ">
         <div className="flex min-h-screen flex-col">
-          <header className="p-4 bg-(--graphite) text-(--cloud)">
+          <header className="p-4 sticky top-0 shadow-2xl  bg-(--graphite) text-(--cloud)">
             <h1>eCommerece</h1>
           </header>
           <main className="grow">
