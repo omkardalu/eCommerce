@@ -15,9 +15,9 @@ const ProductCard = ({ id, name, brand, price, tag, rating }) => {
             <p className="font-bold max-h-[2lh] overflow-hidden  xl:text-xl xl:pb-4 text-lg text-(--ink)">
               {name}
             </p>
-            <p className=" pb-2 text-(--slate) xl:text-xl xl:pb-4">{brand}</p>
+            <p className=" pb-2 text-(--silver) xl:text-xl xl:pb-4">{brand}</p>
             <div className="flex justify-between sm:pr-4">
-              <p className="text-(--silver) font-bold ">₹{price}</p>
+              <p className="text-(--graphite) font-bold ">₹{price}</p>
               <p className="text-(--graphite) border text-sm border-(--slate) rounded-2xl px-2 ">★{rating}</p>
             </div>
           </div>

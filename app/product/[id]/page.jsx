@@ -1,27 +1,52 @@
 import { getProduct } from "@/utils/products";
-import Image from "next/image";
 const page = async ({ params }) => {
   const { id } = await params;
 
   const product = await getProduct(id);
   return (
-    <section className="sm:grid capitalize sm:grid-cols-2">
-      <div className="flex overflow-scroll">
-        {product.images.map((img) => (
-          <img src={img} alt="no image" />
-        ))}
-      </div>
-      <div>
-        <p>{product.name}</p>
-        <p>{product.brand}</p>
-        <p>{product.category}</p>
-        <p>{product.description}</p>
-        <div>
-        <p>{product.rating}</p>
-        <p>{product.tag}</p>
-        <p>{product.price}</p>
+    <section className="md:grid capitalize relative md:grid-cols-2">
+      <div className="sticky z-0 top-0">
+        <div className="flex flex-row overflow-x-scroll no-scrollbar">
+          {product.images.map((img, idx) => (
+            <img
+              key={idx}
+              src={img}
+              alt="product image"
+              className="z-0"
+            />
+          ))}
         </div>
-        <p>{product.specLabels.map((label) => product.specs[label])}</p>
+      </div>
+      <div className="p-6 flex flex-col relative z-10 justify-center bg-(--cloud)/50 rounded-3xl backdrop-blur-xl ">
+        <p className="text-3xl font-bold text-(--ink) mb-1">{product.name}</p>
+        <div className="flex gap-2 items-center text-(--slate) mb-3">
+          <p className="text-2xl font-bold ">{product.brand}</p> |
+          <p>{product.category}</p>
+        </div>
+        <p className="text-(--graphite) mb-2">{product.description}</p>
+        <div>
+          <div className=" my-3 mb-12  flex gap-30 items-center-safe">
+            <div className={`w-[${(2 / 5) * 100}%]`}>
+              <p className="text-(--graphite)">{product.tag}</p>
+              ★★★★★ {product.rating}
+            </div>
+            <p className="text-(--graphite) font-bold text-2xl py-2">
+              ₹{product.price}
+            </p>
+          </div>
+          <div className="max-w-fit overflow-hidden"></div>
+        </div>
+        <table className="">
+          <tbody className="rounded-2xl overflow-hidden">
+
+          {
+            product.specLabels.map((label ,i) => (
+            <tr key={i} className={` shadow  overflow-hidden   `} >
+              <td className="w-2/5 content-start p-2">{label}</td><td className="p-2">:{product.specs[label]}</td>
+            </tr>
+          ))}
+            </tbody>
+        </table>
       </div>
     </section>
   );
