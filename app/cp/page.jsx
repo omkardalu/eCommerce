@@ -48,15 +48,14 @@ const colors = [
   };
 
   return (
-    <div>
-      <h1>eCommerce</h1>
+    <div className="min-h-dvh flex items-center justify-center">
       <section>
         <div className="flex flex-wrap text-gray-700 gap-2">
           {colors.map((color) => (
             <div
               key={color.name}
               onClick={() => copyToClipboard(color.name)}
-              className={"cursor-pointer p-4 rounded text-sm font-medium transition hover:opacity-80"}
+              className={"cursor-pointer p-8 shadow-lg capitalize rounded text-xl font-medium transition hover:opacity-80"}
               style={{ backgroundColor: color.value }}
               title={`Click to copy: var(--${color.name})`}
             >

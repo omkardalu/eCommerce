@@ -1,12 +1,14 @@
+import Link from "next/link";
 import Card from "./Card";
 
 const ProductCard = ({ id, name, brand, price, tag, rating }) => {
   return (
     <div className="md:w-1/4 md:mb-2 lg:w-1/5 xl:mb-4 xl:w-1/6 mx-4 ">
+    <Link href={`/cp`}>
       <Card>
-        <div className="grid grid-cols-2 md:grid-cols-1 md:grid-rows-2 ">
-          <div className="overflow-hidden z-0 hover:shadow-inner flex items-center">
-              <img className="hover:scale-125 rounded-xl h-full w-auto" src="https://placehold.co/600x400" alt="" />
+        <div className="grid grid-cols-2 md:grid-cols-1 md:grid-rows-2 bg-linear-to-l  from-(--cloud) to-(--snow)">
+          <div className="overflow-hidden z-0 hover:shadow-inner flex items-center ">
+              <img className="hover:scale-125 rounded-xl h-full w-auto" src="images/mobile/iphone15pro3.jpg" alt="" />
           </div>
 
           <div className="flex flex-col p-2 px-4 justify-center">
@@ -21,6 +23,7 @@ const ProductCard = ({ id, name, brand, price, tag, rating }) => {
           </div>
         </div>
       </Card>
+    </Link>
     </div>
   );
 };
@@ -56,17 +59,3 @@ export default ProductCard;
    },
 */
 
-//   const a = <section className="bg-(--borders) max-w-3/4 sm:max-w-50  min-w-40 shadow-xl hover:shadow-2xl transition-shadow duration-150 text-(--textSecondary) border-4 border-background m-2 mx-6 rounded-xl">
-//       <div className="flex sm:flex-col items-center ">
-//         <div className="sm:h-40 h-full w-1/2 sm:w-auto overflow-hidden flex items-center justify-center bg-white"><img className="object-cover" src="/images/audio/Nothing-Ear-(2).png" alt={name} /></div>
-//         <div className=" w-1/2 sm:w-auto p-4">
-//           <p className="bg-white w-fit px-1 text-[10px] rounded-2xl">{tag}</p>
-//           <p className="capitalize text-(--textPrimary) font-black text-2xl text-balance wrap-break-word overflow-hidden h-18 pt-2">{name}</p>
-//           <p className="text-(--textSecondary) capitalize font-bold text-xl">{brand}</p>
-//           <div className="flex justify-between">
-//           <p>★ {rating}</p>
-//           <p className="text-(--textPrimary)">₹{price}</p>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
