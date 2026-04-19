@@ -4,11 +4,11 @@ import Card from "./Card";
 const ProductCard = ({ id, name, brand, price, tag, rating }) => {
   return (
     <div className="md:w-1/4 md:mb-2 lg:w-1/5 xl:mb-4 xl:w-1/6 mx-4 ">
-    <Link href={`/cp`}>
+    <Link href={`/product/${id}`}>
       <Card>
         <div className="grid grid-cols-2 md:grid-cols-1 md:grid-rows-2 bg-linear-to-l  from-(--cloud) to-(--snow)">
           <div className="overflow-hidden z-0 hover:shadow-inner flex items-center ">
-              <img className="hover:scale-125 rounded-xl h-full w-auto" src="images/mobile/iphone15pro3.jpg" alt="" />
+              <img className="hover:scale-125 rounded-xl h-full w-auto" src="images/mobile/iphone15pro1.jpg" alt="" />
           </div>
 
           <div className="flex flex-col p-2 px-4 justify-center">

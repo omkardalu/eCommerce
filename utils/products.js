@@ -7,9 +7,9 @@
 // ─────────────────────────────────────────────────────────────
 
 const specLabels = {
-  smartphones: ["Display", "Chip", "Battery", "Camera", "Storage"],
-  laptops: ["Processor", "RAM", "Storage", "Display", "Battery"],
-  audio: ["Battery", "Noise Cancellation", "Driver Size", "Connectivity", "Codec"],
+  smartphones: ["display", "chip", "battery", "camera", "storage"],
+  laptops: ["processor", "ram", "storage", "display", "battery"],
+  audio: ["battery", "noise cancellation", "driver size", "connectivity", "codec"],
 };
 
 const products = [
@@ -26,9 +26,9 @@ const products = [
     price: 134900,
     tag: "Best Seller",
     images: [
-      "/images/apple-iphone-15-pro-1.png",
-      "/images/apple-iphone-15-pro-2.png",
-      "/images/apple-iphone-15-pro-3.png",
+      "/images/mobile/iphone15pro1.jpg",
+      "/images/mobile/iphone15pro2.jpg",
+      "/images/mobile/iphone15pro3.jpg",
     ],
     description: "Titanium frame. A17 Pro chip. The benchmark everything else chases.",
     specs: {
@@ -1136,5 +1136,11 @@ const products = [
 
 ];
 
-export { specLabels };
+
+const getProduct = async (pid) => {
+  return products.find(({id}) => {
+    return id === pid;
+  });
+}
+export { specLabels , getProduct};
 export default products;
