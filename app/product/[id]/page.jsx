@@ -1,8 +1,11 @@
 import { getProduct } from "@/utils/products";
+import ProductClient from "@/components/ProductClient";
+
 const page = async ({ params }) => {
   const { id } = await params;
 
   const product = await getProduct(id);
+
   return (
     <section className="md:grid min-h-screen capitalize items-center relative md:grid-cols-2">
       <div className="sticky z-0 top-0">
@@ -25,7 +28,7 @@ const page = async ({ params }) => {
         </div>
         <p className="text-(--graphite) mb-2">{product.description}</p>
         <div>
-          <div className=" my-3 mb-12  flex gap-30 items-center-safe">
+          <div className=" my-3 mb-6  flex gap-30 items-center-safe">
             <div className={`w-[${(2 / 5) * 100}%]`}>
               <p className="text-(--graphite)">{product.tag}</p>
               ★★★★★ {product.rating}
@@ -34,7 +37,9 @@ const page = async ({ params }) => {
               ₹{product.price}
             </p>
           </div>
-          <div className="max-w-fit overflow-hidden"></div>
+
+          <ProductClient id={id} />
+
         </div>
         <table className="">
           <tbody className="rounded-2xl overflow-hidden">
