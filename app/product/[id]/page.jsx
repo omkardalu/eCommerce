@@ -4,7 +4,7 @@ const page = async ({ params }) => {
 
   const product = await getProduct(id);
   return (
-    <section className="md:grid capitalize relative md:grid-cols-2">
+    <section className="md:grid min-h-screen capitalize items-center relative md:grid-cols-2">
       <div className="sticky z-0 top-0">
         <div className="flex flex-row overflow-x-scroll no-scrollbar">
           {product.images.map((img, idx) => (
@@ -17,7 +17,7 @@ const page = async ({ params }) => {
           ))}
         </div>
       </div>
-      <div className="p-6 flex flex-col relative z-10 justify-center bg-(--cloud)/50 rounded-3xl backdrop-blur-xl ">
+      <div className="p-6 flex flex-col relative z-10 justify-center bg-(--cloud)/50 rounded-3xl shadow-md backdrop-blur-xl ">
         <p className="text-3xl font-bold text-(--ink) mb-1">{product.name}</p>
         <div className="flex gap-2 items-center text-(--slate) mb-3">
           <p className="text-2xl font-bold ">{product.brand}</p> |
@@ -42,7 +42,7 @@ const page = async ({ params }) => {
           {
             product.specLabels.map((label ,i) => (
             <tr key={i} className={` shadow  overflow-hidden   `} >
-              <td className="w-2/5 content-start p-2">{label}</td><td className="p-2">:{product.specs[label]}</td>
+              <td className="w-2/5 content-start p-2">{label}</td><td className="p-2">{product.specs[label]}</td>
             </tr>
           ))}
             </tbody>
