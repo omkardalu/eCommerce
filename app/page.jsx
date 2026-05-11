@@ -1,7 +1,7 @@
 import ProductCard from "@/components/ProductCard";
 import products from "@/utils/products";
 
-export default function Home() {
+export default function Dashboard() {
 
   return (
     <div className="flex items-center flex-wrap py-4 justify-center">

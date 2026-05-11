@@ -1,11 +1,12 @@
-"use client"
-
+"use client";
+import { useCart } from "@/app/providers/CartProvider";
 import Button from "@/components/Button";
-import cart from "@/utils/cart";
 
 const ProductClient = ({ id }) => {
+  const [cart, setCart] = useCart();
+
   const addToCart = () => {
-    cart.push(id);
+    setCart([...cart, id]);
     console.log(cart);
   };
 
