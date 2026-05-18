@@ -7,7 +7,7 @@ const HomeHeader = () => {
   return (
     <header className="p-4 sticky top-0 left-0 right-0 z-50 shadow-2xl  bg-(--graphite) text-(--cloud)">
       <div className="flex justify-between items-center">
-          <h1>eCommerece</h1>
+          <h1><Link href={"/"}>eCommerece</Link></h1>
           <div>
             <Link href={"/cart"}>
               <PiShoppingCartSimpleDuotone />

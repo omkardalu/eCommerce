@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import ProductCard from "@/components/ProductCard";
 const Cart = () => {
   const [cart, setCart] = useCart();
-
   const [cartItems, setCartItems] = useState([]);
 
   useEffect(() => {

@@ -1,13 +1,15 @@
 "use client";
 import { useCart } from "@/app/providers/CartProvider";
 import Button from "@/components/Button";
+import { useToast } from "@/app/providers/ToastProvider";
 
 const ProductClient = ({ id }) => {
   const [cart, setCart] = useCart();
-
+  const toast = useToast();
+  
   const addToCart = () => {
     setCart([...cart, id]);
-    console.log(cart);
+    toast("Item added to cart");
   };
 
   return (
