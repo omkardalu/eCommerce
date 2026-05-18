@@ -1,7 +1,11 @@
 import "./globals.css";
 import "@fontsource-variable/geist";
-import Home from "@/features/Home";
+import { CartProvider } from "@/app/providers/CartProvider";
 
+import { ToastProvider } from "@/app/providers/ToastProvider";
+import HomeHeader from "@/features/components/HomeHeader";
+import Toast from "@/features/components/Toast";
+import HomeFooter from "@/features/components/HomeFooter";
 
 export const metadata = {
   title: "eCommercebyme",
@@ -11,9 +15,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`h-full antialiased`}>
-      <body className="min-h-full flex flex-col]">
-        <div className="flex min-h-screen min-w-full flex-col">
-            <Home>{children}</Home>
+      <body className="min-h-screen  flex flex-col]">
+        <div className="flex min-w-full flex-col">
+          <CartProvider>
+            <ToastProvider>
+              <HomeHeader />
+              <main className="grow">{children}</main>
+              <HomeFooter />
+              <Toast />
+            </ToastProvider>
+          </CartProvider>
         </div>
       </body>
     </html>
