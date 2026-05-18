@@ -1,5 +1,5 @@
 "use client";
-import { getCartItems } from "@/utils/getCartItems";
+import { getCartItems, getItems } from "@/utils/getItems";
 import { useCart } from "../providers/CartProvider";
 import { useEffect, useState } from "react";
 import ProductCard from "@/components/ProductCard";
@@ -9,7 +9,7 @@ const Cart = () => {
 
   useEffect(() => {
     (async function () {
-      const items = await getCartItems(cart);
+      const items = await getItems(cart);
       setCartItems(items);
     })();
   }, []);
