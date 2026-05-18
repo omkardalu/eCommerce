@@ -3,7 +3,7 @@ import Card from "./Card";
 
 const ProductCard = ({ id, name, brand, price, tag, rating }) => {
   return (
-    <div className="md:w-1/4 md:mb-2 lg:w-1/5 xl:mb-4 xl:w-1/6 mx-4 ">
+    <div className="md:w-1/4 shrink-0 h-xl md:mb-2 lg:w-1/5 xl:mb-4 xl:w-1/6 mx-4 ">
     <Link href={`/product/${id}`}>
       <Card>
         <div className="grid grid-cols-2 md:grid-cols-1 md:grid-rows-2 bg-linear-to-l  from-(--cloud) to-(--snow)">

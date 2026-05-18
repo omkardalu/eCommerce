@@ -19,7 +19,7 @@ const Toast = () => {
 
   return (
     <div
-      className={`${!visible ? "hidden" : ""} fixed top-[10%] left-[50%] translate-x-[-50%] bg-(--platinum) px-4 py-2 text-(--graphite) rounded-lg shadow-lg border border-(--cloud)`}
+      className={`${!visible ? "hidden" : ""} fixed top-[10%] left-[50%] z-10 text-nowrap border-t border-(--silver) translate-x-[-50%] bg-(--snow) px-4 py-2 text-(--graphite) rounded-lg shadow-xl`}
     >
       <p>{message}</p>
     </div>
