@@ -22,7 +22,7 @@ const ProductCard = ({
   const discountPercentage = discount || (originalPrice ? Math.round(((originalPrice - price) / originalPrice) * 100) : 0);
 
   return (
-    <div className="w-full sm:w-1/2 md:w-1/3 shrink-0 lg:w-1/4 xl:w-1/5 px-2 sm:px-3 mb-4">
+    <div className="w-full sm:w-1/2 md:w-1/3 shrink-0 min-w-50 lg:w-1/4 xl:w-1/5 px-2 sm:px-3 mb-4">
       <Link href={`/product/${id}`}>
         <Card className="h-full">
           <div

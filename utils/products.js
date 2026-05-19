@@ -1084,7 +1084,7 @@ const products = [
     brand: "Anker",
     category: "audio",
     price: 5999,
-    tag: "Best Seller",
+    tag: "New",
     images: [
       "/images/anker-soundcore-q45-1.png",
       "/images/anker-soundcore-q45-2.png",
