@@ -16,7 +16,7 @@ const page = async ({ params }) => {
               src={img}
               alt="product image"
               className="z-0"
-            />
+            />  
           ))}
         </div>
       </div>

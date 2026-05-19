@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import Card from "./Card";
 import AddToCartButton from "./AddToCartButton";
-import ProductClient from "./ProductClient";
+import WishListButton from "./WishListButton";
 
 const ProductCard = ({
   id,
@@ -17,7 +17,6 @@ const ProductCard = ({
   badge,
   discount
 }) => {
-  const [isWishlisted, setIsWishlisted] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
   const discountPercentage = discount || (originalPrice ? Math.round(((originalPrice - price) / originalPrice) * 100) : 0);
@@ -56,31 +55,7 @@ const ProductCard = ({
               )}
 
               {/* Wishlist Button */}
-              <button
-                onClick={(e) => {
-                  e.preventDefault();
-                  setIsWishlisted(!isWishlisted);
-                }}
-                className={`absolute bottom-3 right-3 p-2.5 rounded-full transition-all duration-300 transform ${
-                  isWishlisted
-                    ? "bg-red-500 scale-110"
-                    : "bg-white/80 backdrop-blur-sm hover:bg-white"
-                } shadow-md hover:shadow-lg`}
-              >
-                <svg
-                  className={`w-5 h-5 transition-colors ${isWishlisted ? "text-white" : "text-gray-700"}`}
-                  fill={isWishlisted ? "currentColor" : "none"}
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                  />
-                </svg>
-              </button>
+              <WishListButton id={id} />
 
               
             </div>

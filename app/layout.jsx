@@ -1,11 +1,11 @@
 import "./globals.css";
 import "@fontsource-variable/geist";
 import { CartProvider } from "@/app/providers/CartProvider";
-
 import { ToastProvider } from "@/app/providers/ToastProvider";
 import HomeHeader from "@/features/components/HomeHeader";
 import Toast from "@/features/components/Toast";
 import HomeFooter from "@/features/components/HomeFooter";
+import { WishListProvider } from "./providers/WhishListProvider";
 
 export const metadata = {
   title: "eCommercebyme",
@@ -19,10 +19,12 @@ export default function RootLayout({ children }) {
         <div className="flex min-w-full flex-col">
           <CartProvider>
             <ToastProvider>
-              <HomeHeader />
-              <main className="grow">{children}</main>
-              <HomeFooter />
-              <Toast />
+              <WishListProvider>
+                <HomeHeader />
+                <main className="grow">{children}</main>
+                <HomeFooter />
+                <Toast />
+              </WishListProvider>
             </ToastProvider>
           </CartProvider>
         </div>
