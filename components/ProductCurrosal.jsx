@@ -6,7 +6,7 @@ const ProductCurrosal = ({ items, name }) => {
     <div className="my-4 px-4">
       <p className="text-4xl text-(--graphite) font-extrabold px-4 my-4">{name}</p>
       <div className="">
-        <div className="flex items-center   flex-wrap  justify-start overflow-x-auto">
+        <div className="flex items-center flex-wrap  justify-start overflow-x-auto">
           {items.map((product) => {
             return (
               <ProductCard

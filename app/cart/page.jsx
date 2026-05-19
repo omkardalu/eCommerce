@@ -24,7 +24,7 @@ const Cart = () => {
         {cartItems.length === 0 ? (
           <div>No Items Added Yet</div>
         ) : (
-          <section className="">
+          <section className=" w-screen">
             <div className="p-2 top-13 flex items-center justify-center gap-10 flex-wrap backdrop-blur-2xl  z-10 mb-4 sticky pb-3 md:max-w-1/2   shadow-md  mx-auto rounded-lg bg-(--cloud)/50 text-(--graphite) text-center">
               <p className="p-2 ">
                 Total Items: <p className="text-2xl">{cartItems.length}</p>

@@ -8,7 +8,7 @@ const Button = ({ text,handler, type }) => {
     break;
     default: styles = " shadow-xl  bg-(--graphite) text-(--snow) border border-transparent "
   }
-  return <button onClick={handler} className={`px-4 py-2 rounded-3xl cursor-pointer m-1 ${styles}`}>{text}</button>;
+  return <button onClick={handler} className={`px-4 py-2 w-full max-w-auto rounded-3xl cursor-pointer m-1 ${styles}`}>{text}</button>;
 };
 
 export default Button;
