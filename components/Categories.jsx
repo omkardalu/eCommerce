@@ -22,15 +22,15 @@ const Categories = () => {
         ]
 
   return (
-    <div className="relative group  bg-(--platinum)">
+    <div className="relative group shadow ">
       <h1 className="text-4xl  text-(--mist) group-hover:text-(--graphite) font-extrabold px-4 my-4">
         Categories
       </h1>
-      <div className="flex flex-col sticky top-0 flex-wrap items-center justify-center px-8 ">
+      <div className="flex flex-col sticky top-[10%] flex-wrap items-center justify-center px-8 ">
         {categories.map((c, i) => (
           <Card key={i}>
             <Link href={`/categories/${c.name}`}>
-              <img src={c.imgUrl} alt="" className="h-48"  />
+              <img src={c.imgUrl} alt="" className="h-36"  />
               <div className="px-4 py-2 capitalize bg-(--ink) text-center text-(--cloud)">
                 {c.name}
               </div>

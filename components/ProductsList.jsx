@@ -19,11 +19,11 @@ const ProductsList = ({ name, items }) => {
   
 
   return (
-    <section className="w-full rounded-xl m-2  group bg-(--cloud) shadow  p-4">
-      <div>
-        <p className="text-4xl text-(--silver) touch-auto group-hover:text-(--graphite) font-extrabold px-4 my-4">{name}</p>
+    <section className="w-full relative group bg-(--cloud) shadow  p-2">
+      <div className="sticky top-[9%] w-fit bg-(--cloud) rounded  shadow-xl  z-10">
+        <p className="text-4xl w-full h-full text-(--silver) touch-auto group-hover:text-(--graphite) font-extrabold px-4 my-4">{name}</p>
       </div>
-      <div className="flex flex-wrap ">{products}</div>
+      <div className="flex flex-wrap ">{products.length >0? products:<div className="mx-auto my-10 text-4xl font-black text-(--graphite)">😅 No items found</div>}</div>
     </section>
   );
 };
