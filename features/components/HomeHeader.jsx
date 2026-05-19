@@ -10,7 +10,7 @@ const HomeHeader = () => {
         <h1 className="text-2xl text-(--cloud) hover:underline">
           <Link href={"/"}>eCommerece</Link>
         </h1>
-        <div className="flex gap-8  items-center ">
+        <div className="flex gap-6  items-center ">
           <Link href={"/search"}>
             <div className="text-2xl p-2 rounded hover:bg-(--ink)">
               <IoSearchOutline />

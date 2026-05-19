@@ -22,15 +22,15 @@ const Cart = () => {
   }, []);
 
   const totalItems = (
-    <p className="p-2 ">
-      Total Items: <p className="text-2xl">{cartItems.length}</p>
+    <p className="p-2 text-sm ">
+      Total Items: <p className="text-xl sm:text-2xl">{cartItems.length}</p>
     </p>
   );
 
   const totalPrice = (
-    <p className="p-2 ">
+    <p className="p-2 text-sm ">
       Total price:{" "}
-      <p className="text-2xl">
+      <p className="sm:text-2xl text-bold text-xl">
         ₹
         {cartItems.reduce((ac, cu) => {
           console.log(ac, cu.price);
@@ -48,9 +48,9 @@ const Cart = () => {
             <div>No Items Added Yet</div>
           ) : (
             <section className=" w-screen">
-              <div className="p-2 top-13 flex items-center justify-center gap-10 flex-wrap backdrop-blur-2xl  z-10 mb-4 sticky pb-3 md:max-w-1/2   shadow-md  mx-auto rounded-lg bg-(--cloud)/50 text-(--graphite) text-center">
+              <div className="top-13 flex items-center justify-center gap-4 backdrop-blur-2xl  z-11 mb-4 sticky pb-3 md:max-w-1/2   shadow-md  mx-auto rounded-lg bg-(--cloud)/50 text-(--graphite) text-center">
                 {totalItems}
-                <div className="my-2">
+                <div className="my-2 text-sm">
                   <Button type={1} text={"Buy All"} />
                 </div>
                 {totalPrice}
@@ -60,10 +60,12 @@ const Cart = () => {
           )}
         </div>
       </div>
-
-      <div className="">
+      {
+        wishListItems.length > 0 &&
+        <div className=" relative">
         <ProductsList name={"WishList"} items={wishListItems} />
       </div>
+      }
     </section>
   );
 };
