@@ -16,11 +16,12 @@ const page = async ({ searchParams }) => {
       <form
         action="/search"
         method="get"
-        className="flex items-center border mx-auto w-fit sticky top-[9%] z-10 shadow-xl border-(--platinum) p-1  rounded-lg bg-(--snow)"
+        className="flex items-center rounded-xl mx-auto w-fit sticky top-[9%] z-12 shadow-xl  p-1  backdrop-blur bg-white/50 border border-(--platinum)"
       >
-        <div className="shadow-inner rounded-lg">
+        <div className=" shadow-lg rounded-xl backdrop-blur bg-white/50 border border-(--platinum)">
         <input
           type="search"
+          autoFocus
           name="s"
           className="text-(--ink)   rounded-lg h-full  outline-0 font-medium text-lg px-4 py-2"
           placeholder="Search here"
@@ -31,7 +32,7 @@ const page = async ({ searchParams }) => {
           </div>
       </form>
       <div className="my-4 px-4">
-        <ProductsList name={"Search results for " + s} items={items} />
+        <ProductsList name={"Searched " + s} items={items} />
       </div>
     </section>
   );
