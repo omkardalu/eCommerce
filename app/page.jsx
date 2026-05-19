@@ -10,12 +10,11 @@ export default function Dashboard() {
   return (
     <section className="">
       <div className="sm:flex relative"> 
-        
-        <Categories />
         <div className="">
         <ProductsList name={"Featured"} items={featured} />
         <ProductsList name={"Best Seller"} items={bestSeller} />
         </div>
+        <Categories />
       </div>
       <ProductsList name={"New Arrivals"} items={newArrivals} />
     </section>
