@@ -1,22 +1,16 @@
-import { getProduct } from "@/utils/products";
+import products, { getProduct } from "@/utils/products";
 import ProductClient from "@/components/ProductClient";
+import CompareButton from "@/components/CompareButton";
 
 const page = async ({ params }) => {
   const { id } = await params;
-
   const product = await getProduct(id);
-
   return (
     <section className="md:grid min-h-screen capitalize items-center relative md:grid-cols-2">
       <div className="sticky z-0 top-0">
         <div className="flex flex-row overflow-x-scroll no-scrollbar">
           {product.images.map((img, idx) => (
-            <img
-              key={idx}
-              src={img}
-              alt="product image"
-              className="z-0"
-            />  
+            <img key={idx} src={img} alt="product image" className="z-0" />
           ))}
         </div>
       </div>
@@ -39,19 +33,24 @@ const page = async ({ params }) => {
           </div>
 
           <ProductClient id={id} />
-
         </div>
         <table className="">
           <tbody className="rounded-2xl overflow-hidden">
-
-          {
-            product.specLabels.map((label ,i) => (
-            <tr key={i} className={` shadow  overflow-hidden   `} >
-              <td className="w-2/5 content-start p-2">{label}</td><td className="p-2">{product.specs[label]}</td>
-            </tr>
-          ))}
-            </tbody>
+            {product.specLabels.map((label, i) => (
+              <tr key={i} className={` shadow  overflow-hidden   `}>
+                <td className="w-2/5 content-start p-2">{label}</td>
+                <td className="p-2">{product.specs[label]}</td>
+              </tr>
+            ))}
+          </tbody>
         </table>
+        <CompareButton product={product} products={products} />
+        {/* <div className="my-4 bg-(--cloud) shadow-xl border flex border-(--platinum) p-2 rounded-xl">
+          <Button text={"Compare"} handler={()=> router.push(`/compare?a=${product.id}&b=${selectRef.current.value}`)}  type={3} />
+          <select ref={selectRef} className="" onSelect={(e)=> console.log(e.target)}>
+            {products.filter((p) => p.category === product.category).map((p,i) => {return <option value={p.id} className="text-center p-2 text-black">{p.name}</option>})}
+          </select>
+        </div> */}
       </div>
     </section>
   );
