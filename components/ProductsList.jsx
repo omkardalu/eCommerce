@@ -59,6 +59,7 @@ const ProductsList = ({ name, items }) => {
         price={product.price}
         tag={product.tag}
         rating={product.rating}
+        image={product.images[0]}
       />
     );
   });

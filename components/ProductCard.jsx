@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Card from "./Card";
 import AddToCartButton from "./AddToCartButton";
 import WishListButton from "./WishListButton";
@@ -13,11 +13,24 @@ const ProductCard = ({
   originalPrice,
   tag,
   rating,
-  image = "images/mobile/iphone15pro1.jpg",
+  image,
+  category,
   badge,
   discount
 }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const fallbackImages = {
+    smartphones: "https://tse4.mm.bing.net/th/id/OIP.kuNoFenobVGQHWsZ6Co1xgHaHa?pid=Api&P=0&h=180",
+    laptops: "https://electronikz.com/images/hp-newest-laptop-review_3.jpg",
+    audio: "https://tse2.mm.bing.net/th/id/OIP.tNN2DdOJgF5HPEGRlKuJ-gHaHa?pid=Api&P=0&h=180",
+    default: "https://tse4.mm.bing.net/th/id/OIP.kuNoFenobVGQHWsZ6Co1xgHaHa?pid=Api&P=0&h=180"
+  };
+  const categoryKey = category?.toLowerCase();
+  const [imageSrc, setImageSrc] = useState(image || fallbackImages[categoryKey] || fallbackImages.default);
+
+  useEffect(() => {
+    setImageSrc(image || fallbackImages[categoryKey] || fallbackImages.default);
+  }, [image, category]);
 
   const discountPercentage = discount || (originalPrice ? Math.round(((originalPrice - price) / originalPrice) * 100) : 0);
 
@@ -33,8 +46,14 @@ const ProductCard = ({
             {/* Image Container */}
             <div className="relative overflow-hidden h-48 sm:h-56 md:h-64 flex items-center justify-center bg-white">
               <img
-                src={image}
+                src={imageSrc}
                 alt={name}
+                onError={() => {
+                  const fallback = fallbackImages[categoryKey] || fallbackImages.default;
+                  if (imageSrc !== fallback) {
+                    setImageSrc(fallback);
+                  }
+                }}
                 className={`w-full h-full object-cover transition-transform duration-500 ease-out ${
                   isHovered ? "scale-110" : "scale-100"
                 }`}

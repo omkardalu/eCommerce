@@ -26,9 +26,9 @@ const products = [
     price: 134900,
     tag: "Best Seller",
     images: [
-      "/images/mobile/iphone15pro1.jpg",
-      "/images/mobile/iphone15pro2.jpg",
-      "/images/mobile/iphone15pro3.jpg",
+      "https://images.unsplash.com/photo-1592286927505-1def25115558?w=500&q=80",
+      "https://images.unsplash.com/photo-1511707267537-b85faf00021e?w=500&q=80",
+      "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=500&q=80",
     ],
     description: "Titanium frame. A17 Pro chip. The benchmark everything else chases.",
     specs: {
@@ -61,8 +61,8 @@ const products = [
     price: 159900,
     tag: "Pro",
     images: [
-      "/images/apple-iphone-15-pro-max-1.png",
-      "/images/apple-iphone-15-pro-max-2.png",
+      "https://images.unsplash.com/photo-1592286927505-1def25115558?w=500&q=80",
+      "https://images.unsplash.com/photo-1511707267537-b85faf00021e?w=500&q=80",
     ],
     description: "5x tetraprism telephoto. All-day titanium. Nothing left to want.",
     specs: {
@@ -94,8 +94,8 @@ const products = [
     price: 129999,
     tag: "New",
     images: [
-      "/images/samsung-galaxy-s24-ultra-1.png",
-      "/images/samsung-galaxy-s24-ultra-2.png",
+      "https://images.unsplash.com/photo-1511941054184-46b1b1f4e0d5?w=500&q=80",
+      "https://images.unsplash.com/photo-1529148482759-b8ac9f7e0a0f?w=500&q=80",
     ],
     description: "200MP intelligence. Built-in S Pen. Galaxy AI that actually works.",
     specs: {
@@ -127,8 +127,8 @@ const products = [
     price: 99999,
     tag: "New",
     images: [
-      "/images/samsung-galaxy-s24-plus-1.png",
-      "/images/samsung-galaxy-s24-plus-2.png",
+      "https://images.unsplash.com/photo-1511941054184-46b1b1f4e0d5?w=500&q=80",
+      "https://images.unsplash.com/photo-1529148482759-b8ac9f7e0a0f?w=500&q=80",
     ],
     description: "Flagship power in a refined flat-edge frame. Galaxy AI, no compromises.",
     specs: {
@@ -158,8 +158,8 @@ const products = [
     price: 106999,
     tag: "Pro",
     images: [
-      "/images/google-pixel-8-pro-1.png",
-      "/images/google-pixel-8-pro-2.png",
+      "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=500&q=80",
+      "https://images.unsplash.com/photo-1606933248051-5ce98c9aba46?w=500&q=80",
     ],
     description: "Seven years of updates. The sharpest Pixel camera. Pure Google, refined.",
     specs: {
@@ -190,8 +190,8 @@ const products = [
     price: 52999,
     tag: "Best Seller",
     images: [
-      "/images/google-pixel-8a-1.png",
-      "/images/google-pixel-8a-2.png",
+      "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=500&q=80",
+      "https://images.unsplash.com/photo-1606933248051-5ce98c9aba46?w=500&q=80",
     ],
     description: "All the Pixel intelligence — in the form factor that fits every pocket.",
     specs: {
@@ -222,8 +222,8 @@ const products = [
     price: 64999,
     tag: "Best Seller",
     images: [
-      "/images/oneplus-12-1.png",
-      "/images/oneplus-12-2.png",
+      "https://images.unsplash.com/photo-1511941054184-46b1b1f4e0d5?w=500&q=80",
+      "https://images.unsplash.com/photo-1529148482759-b8ac9f7e0a0f?w=500&q=80",
     ],
     description: "100W charging. Snapdragon 8 Gen 3. Speed is the only feature that matters.",
     specs: {
@@ -252,8 +252,8 @@ const products = [
     price: 99999,
     tag: "Pro",
     images: [
-      "/images/xiaomi-14-ultra-1.png",
-      "/images/xiaomi-14-ultra-2.png",
+      "https://images.unsplash.com/photo-1592286927505-1def25115558?w=500&q=80",
+      "https://images.unsplash.com/photo-1511707267537-b85faf00021e?w=500&q=80",
     ],
     description: "Leica quad-camera. 1-inch sensor. A ceramic body built for imaging obsessives.",
     specs: {
@@ -282,8 +282,8 @@ const products = [
     price: 109990,
     tag: "Pro",
     images: [
-      "/images/sony-xperia-1-vi-1.png",
-      "/images/sony-xperia-1-vi-2.png",
+      "https://images.unsplash.com/photo-1511707267537-b85faf00021e?w=500&q=80",
+      "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=500&q=80",
     ],
     description: "4K HDR OLED. Variable optical zoom. Full manual control for serious creators.",
     specs: {
@@ -313,8 +313,8 @@ const products = [
     price: 31999,
     tag: "New",
     images: [
-      "/images/motorola-edge-50-pro-1.png",
-      "/images/motorola-edge-50-pro-2.png",
+      "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=500&q=80",
+      "https://images.unsplash.com/photo-1606933248051-5ce98c9aba46?w=500&q=80",
     ],
     description: "125W charging. Curved pOLED. Vegan leather that actually feels premium.",
     specs: {
@@ -342,8 +342,8 @@ const products = [
     price: 89999,
     tag: "Pro",
     images: [
-      "/images/vivo-x100-pro-1.png",
-      "/images/vivo-x100-pro-2.png",
+      "https://images.unsplash.com/photo-1592286927505-1def25115558?w=500&q=80",
+      "https://images.unsplash.com/photo-1511707267537-b85faf00021e?w=500&q=80",
     ],
     description: "Zeiss 1-inch sensor. Dimensity 9300. A new benchmark for mobile photography.",
     specs: {
@@ -372,8 +372,8 @@ const products = [
     price: 23999,
     tag: "New",
     images: [
-      "/images/nothing-phone-2a-1.png",
-      "/images/nothing-phone-2a-2.png",
+      "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=500&q=80",
+      "https://images.unsplash.com/photo-1606933248051-5ce98c9aba46?w=500&q=80",
     ],
     description: "Glyph Interface. Transparent back. Design-first in a world of identical slabs.",
     specs: {
@@ -408,8 +408,8 @@ const products = [
     price: 199900,
     tag: "Best Seller",
     images: [
-      "/images/apple-macbook-pro-14-m3-pro-1.png",
-      "/images/apple-macbook-pro-14-m3-pro-2.png",
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500&q=80",
+      "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&q=80",
     ],
     description: "Pro performance. Liquid Retina XDR. Built for work that can't wait.",
     specs: {
@@ -441,8 +441,8 @@ const products = [
     price: 349900,
     tag: "Pro",
     images: [
-      "/images/apple-macbook-pro-16-m3-max-1.png",
-      "/images/apple-macbook-pro-16-m3-max-2.png",
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500&q=80",
+      "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&q=80",
     ],
     description: "M3 Max. Up to 128GB memory. The machine that renders, compiles and edits without breaking a sweat.",
     specs: {
@@ -474,8 +474,8 @@ const products = [
     price: 149900,
     tag: "Best Seller",
     images: [
-      "/images/apple-macbook-air-15-m3-1.png",
-      "/images/apple-macbook-air-15-m3-2.png",
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500&q=80",
+      "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&q=80",
     ],
     description: "Fanless. All-day. 15 inches of silence and speed.",
     specs: {
@@ -510,8 +510,8 @@ const products = [
     price: 179990,
     tag: "Pro",
     images: [
-      "/images/dell-xps-15-9530-1.png",
-      "/images/dell-xps-15-9530-2.png",
+      "https://images.unsplash.com/photo-1588872657840-790ff3bde08c?w=500&q=80",
+      "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=500&q=80",
     ],
     description: "3.5K OLED. RTX 4070. CNC-aluminum built for the creative professional.",
     specs: {
@@ -542,8 +542,8 @@ const products = [
     price: 139990,
     tag: "New",
     images: [
-      "/images/dell-xps-13-plus-1.png",
-      "/images/dell-xps-13-plus-2.png",
+      "https://images.unsplash.com/photo-1588872657840-790ff3bde08c?w=500&q=80",
+      "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=500&q=80",
     ],
     description: "Zero-lattice keyboard. OLED touch. Intel Evo certified in a 13.4-inch form.",
     specs: {
@@ -574,8 +574,8 @@ const products = [
     price: 119990,
     tag: "New",
     images: [
-      "/images/lg-gram-16-2024-1.png",
-      "/images/lg-gram-16-2024-2.png",
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500&q=80",
+      "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&q=80",
     ],
     description: "1.19 kg. 22-hour battery. The lightest 16-inch laptop worth buying.",
     specs: {
@@ -606,8 +606,8 @@ const products = [
     price: 89990,
     tag: "Best Seller",
     images: [
-      "/images/asus-zenbook-14-oled-1.png",
-      "/images/asus-zenbook-14-oled-2.png",
+      "https://images.unsplash.com/photo-1588872657840-790ff3bde08c?w=500&q=80",
+      "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=500&q=80",
     ],
     description: "2.8K OLED. Ryzen 7. Under 1.4 kg. Everyday excellence, no exceptions.",
     specs: {
@@ -638,8 +638,8 @@ const products = [
     price: 169990,
     tag: "Pro",
     images: [
-      "/images/asus-rog-zephyrus-g14-1.png",
-      "/images/asus-rog-zephyrus-g14-2.png",
+      "https://images.unsplash.com/photo-1588872657840-790ff3bde08c?w=500&q=80",
+      "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=500&q=80",
     ],
     description: "Ryzen 9. RX 7900S. A 14-inch gaming powerhouse that fits in any bag.",
     specs: {
@@ -668,8 +668,8 @@ const products = [
     price: 139999,
     tag: "New",
     images: [
-      "/images/microsoft-surface-laptop-6-1.png",
-      "/images/microsoft-surface-laptop-6-2.png",
+      "https://images.unsplash.com/photo-1588872657840-790ff3bde08c?w=500&q=80",
+      "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=500&q=80",
     ],
     description: "PixelSense touch. Copilot+ AI built in. Microsoft's most refined laptop yet.",
     specs: {
@@ -702,8 +702,8 @@ const products = [
     price: 149990,
     tag: "Pro",
     images: [
-      "/images/hp-spectre-x360-14-1.png",
-      "/images/hp-spectre-x360-14-2.png",
+      "https://images.unsplash.com/photo-1588872657840-790ff3bde08c?w=500&q=80",
+      "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=500&q=80",
     ],
     description: "2-in-1 convertible. 2.8K OLED touch. Gem-cut design that turns heads.",
     specs: {
@@ -734,8 +734,8 @@ const products = [
     price: 159990,
     tag: "Pro",
     images: [
-      "/images/lenovo-thinkpad-x1-carbon-g12-1.png",
-      "/images/lenovo-thinkpad-x1-carbon-g12-2.png",
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500&q=80",
+      "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&q=80",
     ],
     description: "Under 1.1 kg. Military-grade. Intel vPro built for people who can't afford downtime.",
     specs: {
@@ -766,8 +766,8 @@ const products = [
     price: 219990,
     tag: "Pro",
     images: [
-      "/images/razer-blade-15-2024-1.png",
-      "/images/razer-blade-15-2024-2.png",
+      "https://images.unsplash.com/photo-1588872657840-790ff3bde08c?w=500&q=80",
+      "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=500&q=80",
     ],
     description: "RTX 4080. 240Hz QHD+ OLED. CNC-aluminum thinner than most ultrabooks.",
     specs: {
@@ -802,8 +802,8 @@ const products = [
     price: 28990,
     tag: "Best Seller",
     images: [
-      "/images/sony-wh-1000xm5-1.png",
-      "/images/sony-wh-1000xm5-2.png",
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80",
+      "https://images.unsplash.com/photo-1487215078519-e21cc028cb29?w=500&q=80",
     ],
     description: "Eight microphones. 30-hour battery. The ANC benchmark for over-ear headphones.",
     specs: {
@@ -830,8 +830,8 @@ const products = [
     price: 19990,
     tag: "Best Seller",
     images: [
-      "/images/sony-wf-1000xm5-1.png",
-      "/images/sony-wf-1000xm5-2.png",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=500&q=80",
+      "https://images.unsplash.com/photo-1487215078519-e21cc028cb29?w=500&q=80",
     ],
     description: "The smallest Sony flagship. LDAC wireless. ANC that outpunches its size.",
     specs: {
@@ -858,8 +858,8 @@ const products = [
     price: 24900,
     tag: "Best Seller",
     images: [
-      "/images/apple-airpods-pro-2-1.png",
-      "/images/apple-airpods-pro-2-2.png",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=500&q=80",
+      "https://images.unsplash.com/photo-1487215078519-e21cc028cb29?w=500&q=80",
     ],
     description: "H2 chip. Adaptive Audio. Sound that adjusts to your world in real time.",
     specs: {
@@ -885,8 +885,8 @@ const products = [
     price: 59900,
     tag: "Pro",
     images: [
-      "/images/apple-airpods-max-usbc-1.png",
-      "/images/apple-airpods-max-usbc-2.png",
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80",
+      "https://images.unsplash.com/photo-1487215078519-e21cc028cb29?w=500&q=80",
     ],
     description: "Computational audio. Dynamic head tracking. Over-ear sound reimagined by Apple.",
     specs: {
@@ -916,8 +916,8 @@ const products = [
     price: 26990,
     tag: "Best Seller",
     images: [
-      "/images/bose-quietcomfort-45-1.png",
-      "/images/bose-quietcomfort-45-2.png",
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80",
+      "https://images.unsplash.com/photo-1487215078519-e21cc028cb29?w=500&q=80",
     ],
     description: "24 hours. Deep balanced sound. The definition of all-day wearability.",
     specs: {
@@ -944,8 +944,8 @@ const products = [
     price: 23990,
     tag: "New",
     images: [
-      "/images/bose-qc-ultra-earbuds-1.png",
-      "/images/bose-qc-ultra-earbuds-2.png",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=500&q=80",
+      "https://images.unsplash.com/photo-1487215078519-e21cc028cb29?w=500&q=80",
     ],
     description: "CustomTune. Immersive Audio. Earbuds that learn the shape of your ears.",
     specs: {
@@ -973,8 +973,8 @@ const products = [
     price: 17999,
     tag: "New",
     images: [
-      "/images/samsung-galaxy-buds3-pro-1.png",
-      "/images/samsung-galaxy-buds3-pro-2.png",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=500&q=80",
+      "https://images.unsplash.com/photo-1487215078519-e21cc028cb29?w=500&q=80",
     ],
     description: "Blade-tip design. AI ANC. Built for those deep in the Galaxy ecosystem.",
     specs: {
@@ -1001,8 +1001,8 @@ const products = [
     price: 29990,
     tag: "Pro",
     images: [
-      "/images/sennheiser-momentum-4-1.png",
-      "/images/sennheiser-momentum-4-2.png",
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80",
+      "https://images.unsplash.com/photo-1487215078519-e21cc028cb29?w=500&q=80",
     ],
     description: "60-hour battery. Audiophile tuning. ANC that doesn't color the sound.",
     specs: {
@@ -1030,8 +1030,8 @@ const products = [
     price: 34990,
     tag: "Pro",
     images: [
-      "/images/jabra-evolve2-85-1.png",
-      "/images/jabra-evolve2-85-2.png",
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80",
+      "https://images.unsplash.com/photo-1487215078519-e21cc028cb29?w=500&q=80",
     ],
     description: "10 microphones. 37-hour battery. Enterprise call quality without compromise.",
     specs: {
@@ -1058,8 +1058,8 @@ const products = [
     price: 22999,
     tag: "New",
     images: [
-      "/images/marshall-monitor-3-anc-1.png",
-      "/images/marshall-monitor-3-anc-2.png",
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80",
+      "https://images.unsplash.com/photo-1487215078519-e21cc028cb29?w=500&q=80",
     ],
     description: "Rock-tuned drivers. Hybrid ANC. Vintage aesthetic with nothing vintage about the sound.",
     specs: {
@@ -1084,10 +1084,10 @@ const products = [
     brand: "Anker",
     category: "audio",
     price: 5999,
-    tag: "Newwww",
+    tag: "New",
     images: [
-      "/images/anker-soundcore-q45-1.png",
-      "/images/anker-soundcore-q45-2.png",
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80",
+      "https://images.unsplash.com/photo-1487215078519-e21cc028cb29?w=500&q=80",
     ],
     description: "50-hour battery. LDAC. Adaptive ANC at a price that challenges every competitor above it.",
     specs: {
@@ -1114,8 +1114,8 @@ const products = [
     price: 9999,
     tag: "New",
     images: [
-      "/images/nothing-ear-2-1.png",
-      "/images/nothing-ear-2-2.png",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=500&q=80",
+      "https://images.unsplash.com/photo-1487215078519-e21cc028cb29?w=500&q=80",
     ],
     description: "Transparent. Dual-chamber. LHDC 5.0 wireless. Nothing to hide, everything to hear.",
     specs: {
